@@ -1,2 +1,2 @@
-hi, mom
-hi, dad
+hi, Mom
+hi, Dad, too
