@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    </style>
+</head>
+<body>
+    <h1>Gallery Page</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <p>Click the button to change the image:</p>
+    <img id="galleryImage" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?w=150&h=150" alt="Gallery Image">
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage() {
+            const images = [
+                "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?w=150&h=150",
+                "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?w=150&h=150",
+                "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?w=150&h=150"
+            ];
+            const currentImage = document.getElementById('galleryImage').src;
+            let newImage = images[Math.floor(Math.random() * images.length)];
+            while (newImage === currentImage) {
+                newImage = images[Math.floor(Math.random() * images.length)];
+            }
+            document.getElementById('galleryImage').src = newImage;
+        }
+    </script>
+</body>
+</html>
