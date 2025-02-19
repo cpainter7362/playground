@@ -1,0 +1,200 @@
+/* Global Reset and Variables */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #E74C3C;
+    --background-color: #F9FAFB;
+    --text-color: #2C3E50;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Typography */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Gallery Styling */
+#galleryImage {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+    transition: var(--transition);
+}
+
+/* Pokemon Tracker Specific Styling */
+.pokemon-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 200px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+/* Pokemon-specific color themes */
+.pokemon-bulbasaur {
+    background: linear-gradient(135deg, #9BCC50 0%, #789F3F 100%);
+    color: white;
+}
+
+.pokemon-charmander {
+    background: linear-gradient(135deg, #FD7D24 0%, #C67315 100%);
+    color: white;
+}
+
+.pokemon-squirtle {
+    background: linear-gradient(135deg, #4592C4 0%, #3A7BA7 100%);
+    color: white;
+}
+
+.pokemon-pikachu {
+    background: linear-gradient(135deg, #EED535 0%, #D3BC30 100%);
+    color: #2C3E50;
+}
+
+.pokemon-eevee {
+    background: linear-gradient(135deg, #A77C44 0%, #915E28 100%);
+    color: white;
+}
+
+.pokemon-jigglypuff {
+    background: linear-gradient(135deg, #FDB9E9 0%, #EE8EE5 100%);
+    color: #2C3E50;
+}
+
+.pokemon-meowth {
+    background: linear-gradient(135deg, #F1D77E 0%, #D4BB6C 100%);
+    color: #2C3E50;
+}
+
+.pokemon-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pokemon-card p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.pokemon-card button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.pokemon-card button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .pokemon-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-card {
+        width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

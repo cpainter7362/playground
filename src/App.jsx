@@ -14,7 +14,7 @@ const initialPokemon = [
 // Individual Pokemon card component
 const PokemonCard = ({ pokemon, onLevelUp }) => {
   return (
-    <div style={{ border: '1px solid #ccc', margin: '10px', padding: '10px', borderRadius: '5px' }}>
+    <div className={`pokemon-card pokemon-${pokemon.name.toLowerCase()}`}>
       <h3>{pokemon.name}</h3>
       <p>Level: {pokemon.level}</p>
       <button onClick={() => onLevelUp(pokemon.id)}>Level Up!</button>
