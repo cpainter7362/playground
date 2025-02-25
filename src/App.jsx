@@ -14,10 +14,14 @@ const initialPokemon = [
 // Individual Pokemon card component
 const PokemonCard = ({ pokemon, onLevelUp }) => {
   return (
-    <div className={`pokemon-card pokemon-${pokemon.name.toLowerCase()}`}>
-      <h3>{pokemon.name}</h3>
-      <p>Level: {pokemon.level}</p>
-      <button onClick={() => onLevelUp(pokemon.id)}>Level Up!</button>
+    <div className="col-md-4 col-sm-6 mb-4">
+      <div className={`card pokemon-${pokemon.name.toLowerCase()}`}>
+        <div className="card-body">
+          <h3 className="card-title">{pokemon.name}</h3>
+          <p className="card-text">Level: {pokemon.level}</p>
+          <button className="btn btn-primary" onClick={() => onLevelUp(pokemon.id)}>Level Up!</button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -33,10 +37,14 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Pokemon Tracker</h1>
-      <p>Click 'Level Up!' to train your Pokemon!</p>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div className="container mt-4">
+      <div className="row justify-content-center">
+        <div className="col-12">
+          <h1 className="text-center mb-3">Pokemon Tracker</h1>
+          <p className="text-center mb-4">Click 'Level Up!' to train your Pokemon!</p>
+        </div>
+      </div>
+      <div className="row">
         {pokemon.map(p => (
           <PokemonCard 
             key={p.id} 

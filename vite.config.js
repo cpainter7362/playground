@@ -11,7 +11,8 @@ export default defineConfig({
         main: 'index.html',
         contact: 'contact.html',
         gallery: 'gallery.html',
-        react: 'react-page.html'
+        react: 'react-page.html',
+        todo: 'react-todo.html'
       }
     }
   }
