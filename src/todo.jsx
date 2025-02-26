@@ -98,7 +98,12 @@ const Todo = () => {
           <div className="card shadow-sm mb-5">
             <div className="card-body p-4">
               <h1 className="card-title h3 mb-4">Accessible Todo List</h1>
-              
+              <div className="bg-yellow-50 border border-yellow-200 rounded p-4 mb-4">
+                <p className="text-yellow-800">
+                    ⚠️ Security Notice: This app uses localStorage which is vulnerable to XSS attacks. 
+                    Never store sensitive data here as malicious scripts can access it.
+                </p>
+            </div>
               <form onSubmit={addTodo} className="mb-4">
                 <div className="input-group mb-3">
                   <input
