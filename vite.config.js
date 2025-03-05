@@ -12,7 +12,8 @@ export default defineConfig({
         contact: 'contact.html',
         gallery: 'gallery.html',
         react: 'react-page.html',
-        todo: 'react-todo.html'
+        todo: 'react-todo.html',
+        simpleFetch: 'simple-fetch.html'
       }
     }
   }
