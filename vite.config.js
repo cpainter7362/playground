@@ -13,7 +13,9 @@ export default defineConfig({
         gallery: 'gallery.html',
         react: 'react-page.html',
         todo: 'react-todo.html',
-        simpleFetch: 'simple-fetch.html'
+        simpleFetch: 'simple-fetch.html',
+        localFetch: 'local-fetch.html',
+        recipeApp: 'recipe-app.html',
       }
     }
   }
