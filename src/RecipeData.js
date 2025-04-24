@@ -149,5 +149,658 @@ export const recipeData = [
         "Cover and braise in 325°F oven for 2.5-3 hours",
         "Remove ribs and reduce sauce if needed"
       ]
+    },
+    {
+      id: 7,
+      title: "Stir-Fried Rice Noodles",
+      method: "stir-frying",
+      level: "beginner",
+      description: "Learn the basics of stir-frying with this simple noodle dish. Practice high-heat cooking and quick ingredient incorporation.",
+      skills: ["wok handling", "heat management", "quick preparation"],
+      ingredients: [
+        "8 oz rice noodles",
+        "2 eggs, beaten",
+        "2 cups mixed vegetables",
+        "3 tablespoons soy sauce",
+        "2 tablespoons vegetable oil"
+      ],
+      instructions: [
+        "Soak noodles according to package instructions",
+        "Heat wok or large pan over high heat",
+        "Stir-fry vegetables until crisp-tender",
+        "Push vegetables aside, scramble eggs",
+        "Add noodles and soy sauce, toss to combine"
+      ]
+    },
+    {
+      id: 8,
+      title: "Pan-Seared Salmon",
+      method: "sautéing",
+      level: "intermediate",
+      description: "Perfect the art of pan-searing fish with this salmon recipe. Learn about skin crisping and gentle fish cooking.",
+      skills: ["fish cooking", "skin crisping", "temperature control"],
+      ingredients: [
+        "4 salmon fillets, skin-on",
+        "2 tablespoons vegetable oil",
+        "Salt and pepper",
+        "Lemon wedges for serving"
+      ],
+      instructions: [
+        "Pat salmon dry and season well",
+        "Heat oil in pan until shimmering",
+        "Place salmon skin-side down",
+        "Cook 4-5 minutes until skin is crispy",
+        "Flip and cook 2-3 minutes more"
+      ]
+    },
+    {
+      id: 9,
+      title: "Roasted Root Vegetables",
+      method: "roasting",
+      level: "beginner",
+      description: "Master the art of roasting dense root vegetables. Learn about proper cutting techniques and roasting times.",
+      skills: ["knife skills", "vegetable prep", "timing"],
+      ingredients: [
+        "2 parsnips",
+        "2 carrots",
+        "2 sweet potatoes",
+        "3 tablespoons olive oil",
+        "Fresh herbs"
+      ],
+      instructions: [
+        "Preheat oven to 400°F",
+        "Cut vegetables into even pieces",
+        "Toss with oil and herbs",
+        "Roast for 35-40 minutes",
+        "Turn vegetables halfway through"
+      ]
+    },
+    {
+      id: 10,
+      title: "Braised Lamb Shanks",
+      method: "braising",
+      level: "advanced",
+      description: "Develop complex flavors through proper braising technique. Focus on meat browning and liquid management.",
+      skills: ["meat browning", "sauce reduction", "flavor building"],
+      ingredients: [
+        "4 lamb shanks",
+        "1 cup red wine",
+        "2 cups stock",
+        "Mirepoix vegetables",
+        "Herbs and spices"
+      ],
+      instructions: [
+        "Brown lamb shanks thoroughly",
+        "Sauté mirepoix until soft",
+        "Deglaze with wine",
+        "Add stock and herbs",
+        "Braise for 2.5-3 hours"
+      ]
+    },
+    {
+      id: 11,
+      title: "Steamed Fish with Ginger",
+      method: "steaming",
+      level: "intermediate",
+      description: "Learn the delicate art of steaming fish. Focus on timing and gentle heat application.",
+      skills: ["steaming technique", "fish preparation", "sauce making"],
+      ingredients: [
+        "2 fish fillets",
+        "Fresh ginger",
+        "Green onions",
+        "Soy sauce",
+        "Sesame oil"
+      ],
+      instructions: [
+        "Set up steamer basket",
+        "Place fish on plate",
+        "Top with ginger and onions",
+        "Steam for 8-10 minutes",
+        "Finish with soy sauce and oil"
+      ]
+    },
+    {
+      id: 12,
+      title: "Grilled Vegetables",
+      method: "grilling",
+      level: "beginner",
+      description: "Master basic grilling techniques with a variety of vegetables. Learn about heat zones and timing.",
+      skills: ["grill management", "vegetable prep", "timing"],
+      ingredients: [
+        "Assorted vegetables",
+        "Olive oil",
+        "Salt and pepper",
+        "Fresh herbs"
+      ],
+      instructions: [
+        "Preheat grill",
+        "Cut vegetables uniformly",
+        "Toss with oil and seasonings",
+        "Grill using proper zones",
+        "Turn as needed"
+      ]
+    },
+    {
+      id: 13,
+      title: "Deep-Fried Tempura",
+      method: "deep-frying",
+      level: "intermediate",
+      description: "Learn the art of tempura frying. Focus on batter consistency and oil temperature control.",
+      skills: ["batter making", "temperature control", "frying technique"],
+      ingredients: [
+        "Assorted vegetables",
+        "Tempura flour",
+        "Ice-cold water",
+        "Oil for frying"
+      ],
+      instructions: [
+        "Make tempura batter",
+        "Heat oil to 375°F",
+        "Dip vegetables in batter",
+        "Fry until golden",
+        "Drain on paper towels"
+      ]
+    },
+    {
+      id: 14,
+      title: "Poached Eggs",
+      method: "poaching",
+      level: "intermediate",
+      description: "Perfect the technique of egg poaching. Learn about water temperature and timing.",
+      skills: ["water temperature", "egg handling", "timing"],
+      ingredients: [
+        "Fresh eggs",
+        "Water",
+        "Vinegar",
+        "Salt"
+      ],
+      instructions: [
+        "Bring water to simmer",
+        "Add vinegar",
+        "Create water vortex",
+        "Drop egg and cook 3 minutes",
+        "Remove with slotted spoon"
+      ]
+    },
+    {
+      id: 15,
+      title: "Stir-Fried Beef and Broccoli",
+      method: "stir-frying",
+      level: "intermediate",
+      description: "Master high-heat wok cooking with this classic dish. Focus on meat searing and vegetable cooking.",
+      skills: ["wok technique", "meat searing", "sauce thickening"],
+      ingredients: [
+        "Beef strips",
+        "Broccoli florets",
+        "Garlic and ginger",
+        "Soy sauce",
+        "Cornstarch slurry"
+      ],
+      instructions: [
+        "Marinate beef",
+        "Heat wok until smoking",
+        "Sear beef in batches",
+        "Stir-fry broccoli",
+        "Combine with sauce"
+      ]
+    },
+    {
+      id: 16,
+      title: "Broiled Fish Fillets",
+      method: "broiling",
+      level: "beginner",
+      description: "Learn quick high-heat cooking with the broiler. Focus on timing and doneness.",
+      skills: ["broiler management", "fish preparation", "timing"],
+      ingredients: [
+        "White fish fillets",
+        "Butter",
+        "Lemon",
+        "Herbs",
+        "Salt and pepper"
+      ],
+      instructions: [
+        "Preheat broiler",
+        "Season fish",
+        "Place on broiler pan",
+        "Broil 4-5 minutes",
+        "Check for doneness"
+      ]
+    },
+    {
+      id: 17,
+      title: "Braised Pork Belly",
+      method: "braising",
+      level: "advanced",
+      description: "Develop rich flavors through long braising. Focus on fat rendering and meat tenderness.",
+      skills: ["meat braising", "flavor development", "sauce reduction"],
+      ingredients: [
+        "Pork belly",
+        "Aromatics",
+        "Soy sauce",
+        "Wine",
+        "Stock"
+      ],
+      instructions: [
+        "Score and sear pork belly",
+        "Add aromatics",
+        "Pour in liquids",
+        "Simmer for 2-3 hours",
+        "Reduce sauce"
+      ]
+    },
+    {
+      id: 18,
+      title: "Steamed Dumplings",
+      method: "steaming",
+      level: "intermediate",
+      description: "Create delicate steamed dumplings. Learn about dough handling and steaming technique.",
+      skills: ["dough making", "filling preparation", "steaming"],
+      ingredients: [
+        "Dumpling wrappers",
+        "Ground meat",
+        "Vegetables",
+        "Seasonings"
+      ],
+      instructions: [
+        "Make filling",
+        "Fill and fold dumplings",
+        "Arrange in steamer",
+        "Steam for 10 minutes",
+        "Serve with dipping sauce"
+      ]
+    },
+    {
+      id: 19,
+      title: "Grilled Steak",
+      method: "grilling",
+      level: "intermediate",
+      description: "Perfect the art of steak grilling. Learn about meat temperature and resting.",
+      skills: ["temperature control", "meat doneness", "timing"],
+      ingredients: [
+        "Ribeye steak",
+        "Salt and pepper",
+        "Oil",
+        "Butter",
+        "Herbs"
+      ],
+      instructions: [
+        "Bring steak to room temperature",
+        "Season well",
+        "Grill on high heat",
+        "Rest before cutting",
+        "Finish with butter"
+      ]
+    },
+    {
+      id: 20,
+      title: "Deep-Fried Chicken",
+      method: "deep-frying",
+      level: "advanced",
+      description: "Master the technique of deep-frying chicken. Focus on breading and oil temperature.",
+      skills: ["breading technique", "temperature control", "timing"],
+      ingredients: [
+        "Chicken pieces",
+        "Buttermilk",
+        "Flour mixture",
+        "Seasonings",
+        "Oil"
+      ],
+      instructions: [
+        "Marinate in buttermilk",
+        "Dredge in seasoned flour",
+        "Heat oil to 350°F",
+        "Fry until golden",
+        "Rest on rack"
+      ]
+    },
+    {
+      id: 21,
+      title: "Poached Pears",
+      method: "poaching",
+      level: "beginner",
+      description: "Learn fruit poaching techniques. Focus on liquid flavoring and timing.",
+      skills: ["liquid preparation", "fruit handling", "timing"],
+      ingredients: [
+        "Firm pears",
+        "Wine or water",
+        "Sugar",
+        "Vanilla",
+        "Spices"
+      ],
+      instructions: [
+        "Prepare poaching liquid",
+        "Peel pears",
+        "Simmer gently",
+        "Test for doneness",
+        "Reduce liquid for sauce"
+      ]
+    },
+    {
+      id: 22,
+      title: "Pan-Fried Dumplings",
+      method: "pan-frying",
+      level: "intermediate",
+      description: "Create crispy-bottomed dumplings. Learn about browning and steam-frying.",
+      skills: ["dumpling handling", "temperature control", "timing"],
+      ingredients: [
+        "Dumplings",
+        "Oil",
+        "Water",
+        "Dipping sauce"
+      ],
+      instructions: [
+        "Heat oil in pan",
+        "Arrange dumplings",
+        "Add water and cover",
+        "Cook until crispy",
+        "Serve with sauce"
+      ]
+    },
+    {
+      id: 23,
+      title: "Roasted Turkey Breast",
+      method: "roasting",
+      level: "intermediate",
+      description: "Master poultry roasting techniques. Focus on moisture retention and browning.",
+      skills: ["temperature control", "basting", "resting"],
+      ingredients: [
+        "Turkey breast",
+        "Butter",
+        "Herbs",
+        "Salt and pepper",
+        "Stock"
+      ],
+      instructions: [
+        "Prepare herb butter",
+        "Season turkey",
+        "Roast at 375°F",
+        "Baste regularly",
+        "Rest before carving"
+      ]
+    },
+    {
+      id: 24,
+      title: "Braised Oxtail",
+      method: "braising",
+      level: "advanced",
+      description: "Develop rich flavors with tough cuts. Focus on long cooking and collagen breakdown.",
+      skills: ["meat preparation", "braising technique", "sauce making"],
+      ingredients: [
+        "Oxtail pieces",
+        "Vegetables",
+        "Wine",
+        "Stock",
+        "Aromatics"
+      ],
+      instructions: [
+        "Brown oxtail pieces",
+        "Add vegetables",
+        "Deglaze with wine",
+        "Braise for 3-4 hours",
+        "Reduce sauce"
+      ]
+    },
+    {
+      id: 25,
+      title: "Steamed Mussels",
+      method: "steaming",
+      level: "beginner",
+      description: "Learn seafood steaming basics. Focus on shellfish handling and wine sauce.",
+      skills: ["shellfish cleaning", "sauce making", "timing"],
+      ingredients: [
+        "Fresh mussels",
+        "White wine",
+        "Garlic",
+        "Herbs",
+        "Butter"
+      ],
+      instructions: [
+        "Clean mussels",
+        "Sauté aromatics",
+        "Add wine and steam",
+        "Remove opened mussels",
+        "Finish sauce"
+      ]
+    },
+    {
+      id: 26,
+      title: "Grilled Pizza",
+      method: "grilling",
+      level: "advanced",
+      description: "Master grilled pizza technique. Focus on dough handling and heat management.",
+      skills: ["dough handling", "grill management", "topping timing"],
+      ingredients: [
+        "Pizza dough",
+        "Toppings",
+        "Olive oil",
+        "Salt"
+      ],
+      instructions: [
+        "Prepare grill zones",
+        "Stretch dough",
+        "Grill one side",
+        "Flip and top",
+        "Finish cooking"
+      ]
+    },
+    {
+      id: 27,
+      title: "Deep-Fried Calamari",
+      method: "deep-frying",
+      level: "intermediate",
+      description: "Perfect seafood frying technique. Focus on coating and timing.",
+      skills: ["seafood prep", "coating technique", "temperature control"],
+      ingredients: [
+        "Squid rings",
+        "Flour mixture",
+        "Oil",
+        "Seasonings",
+        "Lemon"
+      ],
+      instructions: [
+        "Clean and cut squid",
+        "Coat in seasoned flour",
+        "Fry at 375°F",
+        "Cook in batches",
+        "Serve immediately"
+      ]
+    },
+    {
+      id: 28,
+      title: "Poached Chicken",
+      method: "poaching",
+      level: "intermediate",
+      description: "Learn gentle cooking methods. Focus on flavor infusion and moisture retention.",
+      skills: ["temperature control", "flavor infusion", "timing"],
+      ingredients: [
+        "Chicken breast",
+        "Aromatics",
+        "Stock",
+        "Salt",
+        "Herbs"
+      ],
+      instructions: [
+        "Prepare poaching liquid",
+        "Add chicken",
+        "Maintain temperature",
+        "Cook through",
+        "Rest before slicing"
+      ]
+    },
+    {
+      id: 29,
+      title: "Stir-Fried Vegetables",
+      method: "stir-frying",
+      level: "beginner",
+      description: "Master quick-cooking vegetables. Focus on cutting and heat control.",
+      skills: ["knife skills", "wok technique", "timing"],
+      ingredients: [
+        "Mixed vegetables",
+        "Garlic",
+        "Ginger",
+        "Soy sauce",
+        "Oil"
+      ],
+      instructions: [
+        "Cut vegetables uniformly",
+        "Heat wok",
+        "Add aromatics",
+        "Stir-fry vegetables",
+        "Season and serve"
+      ]
+    },
+    {
+      id: 30,
+      title: "Broiled Lobster Tails",
+      method: "broiling",
+      level: "advanced",
+      description: "Perfect luxury seafood cooking. Focus on preparation and careful cooking.",
+      skills: ["shellfish preparation", "temperature control", "basting"],
+      ingredients: [
+        "Lobster tails",
+        "Butter",
+        "Lemon",
+        "Garlic",
+        "Herbs"
+      ],
+      instructions: [
+        "Butterfly lobster tails",
+        "Prepare herb butter",
+        "Broil carefully",
+        "Baste while cooking",
+        "Serve with lemon"
+      ]
+    },
+    {
+      id: 31,
+      title: "Pan-Seared Duck Breast",
+      method: "sautéing",
+      level: "advanced",
+      description: "Master the art of cooking duck breast. Focus on fat rendering and achieving crispy skin.",
+      skills: ["fat rendering", "temperature control", "meat cooking"],
+      ingredients: [
+        "Duck breast",
+        "Salt",
+        "Pepper",
+        "Herbs",
+        "Optional sauce ingredients"
+      ],
+      instructions: [
+        "Score duck skin",
+        "Start in cold pan",
+        "Render fat slowly",
+        "Cook to medium-rare",
+        "Rest before slicing"
+      ]
+    },
+    {
+      id: 32,
+      title: "Roasted Rack of Lamb",
+      method: "roasting",
+      level: "advanced",
+      description: "Perfect the preparation of rack of lamb. Focus on herb crust and temperature control.",
+      skills: ["meat preparation", "crust making", "temperature monitoring"],
+      ingredients: [
+        "Rack of lamb",
+        "Herbs",
+        "Breadcrumbs",
+        "Mustard",
+        "Garlic"
+      ],
+      instructions: [
+        "French the rack",
+        "Sear all sides",
+        "Apply mustard and herbs",
+        "Roast to desired doneness",
+        "Rest before cutting"
+      ]
+    },
+    {
+      id: 33,
+      title: "Braised Artichokes",
+      method: "braising",
+      level: "intermediate",
+      description: "Learn to prepare and braise artichokes. Focus on vegetable preparation and gentle cooking.",
+      skills: ["vegetable prep", "braising technique", "sauce making"],
+      ingredients: [
+        "Artichokes",
+        "Lemon",
+        "Olive oil",
+        "White wine",
+        "Herbs"
+      ],
+      instructions: [
+        "Prepare artichokes",
+        "Brown in oil",
+        "Add wine and herbs",
+        "Braise until tender",
+        "Reduce cooking liquid"
+      ]
+    },
+    {
+      id: 34,
+      title: "Steamed Whole Fish",
+      method: "steaming",
+      level: "advanced",
+      description: "Master whole fish preparation and steaming. Focus on traditional Asian techniques.",
+      skills: ["fish cleaning", "steaming technique", "sauce preparation"],
+      ingredients: [
+        "Whole fish",
+        "Ginger",
+        "Scallions",
+        "Soy sauce",
+        "Sesame oil"
+      ],
+      instructions: [
+        "Clean and score fish",
+        "Prepare steamer",
+        "Add aromatics",
+        "Steam until done",
+        "Finish with hot oil"
+      ]
+    },
+    {
+      id: 35,
+      title: "Grilled Lamb Chops",
+      method: "grilling",
+      level: "intermediate",
+      description: "Perfect the grilling of lamb chops. Focus on marinade and cooking temperature.",
+      skills: ["marinade making", "grill management", "meat doneness"],
+      ingredients: [
+        "Lamb chops",
+        "Herbs",
+        "Garlic",
+        "Olive oil",
+        "Lemon"
+      ],
+      instructions: [
+        "Marinate chops",
+        "Prepare hot grill",
+        "Grill to medium-rare",
+        "Rest before serving",
+        "Garnish with herbs"
+      ]
+    },
+    {
+      id: 36,
+      title: "Deep-Fried Fish and Chips",
+      method: "deep-frying",
+      level: "intermediate",
+      description: "Create classic fish and chips. Focus on batter consistency and double-frying technique.",
+      skills: ["batter making", "temperature control", "timing"],
+      ingredients: [
+        "White fish fillets",
+        "Potatoes",
+        "Beer batter ingredients",
+        "Oil",
+        "Seasonings"
+      ],
+      instructions: [
+        "Prepare batter",
+        "Double fry chips",
+        "Batter fish",
+        "Fry until golden",
+        "Season and serve"
+      ]
     }
-  ];
+];
