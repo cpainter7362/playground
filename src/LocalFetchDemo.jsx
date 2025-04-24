@@ -4,11 +4,13 @@ const LocalFetchDemo = () => {
   const [numbers, setNumbers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
+  const [focusedIndex, setFocusedIndex] = useState(-1);
 
   const fetchRandomNumbers = async () => {
     setLoading(true);
     setStatus(null);
     setNumbers([]);
+    setFocusedIndex(-1);
     
     try {
       const response = await fetch('http://localhost:3003/');
@@ -51,6 +53,48 @@ const LocalFetchDemo = () => {
     fetchRandomNumbers();
   }, []);
 
+  const handleKeyDown = (event, index) => {
+    switch (event.key) {
+      case 'ArrowRight':
+        event.preventDefault();
+        setFocusedIndex(prev => (prev + 1) % numbers.length);
+        break;
+      case 'ArrowLeft':
+        event.preventDefault();
+        setFocusedIndex(prev => (prev - 1 + numbers.length) % numbers.length);
+        break;
+      case 'ArrowUp':
+      case 'ArrowDown':
+        event.preventDefault();
+        const rowSize = 6; // Number of cards per row
+        const currentRow = Math.floor(index / rowSize);
+        const currentCol = index % rowSize;
+        const totalRows = Math.ceil(numbers.length / rowSize);
+        
+        if (event.key === 'ArrowUp') {
+          const newRow = (currentRow - 1 + totalRows) % totalRows;
+          const newIndex = newRow * rowSize + currentCol;
+          setFocusedIndex(newIndex < numbers.length ? newIndex : newIndex - rowSize + Math.min(currentCol, (numbers.length % rowSize) || rowSize));
+        } else {
+          const newRow = (currentRow + 1) % totalRows;
+          const newIndex = newRow * rowSize + currentCol;
+          setFocusedIndex(newIndex < numbers.length ? newIndex : currentCol);
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
+  useEffect(() => {
+    if (focusedIndex >= 0 && focusedIndex < numbers.length) {
+      const element = document.getElementById(`number-${focusedIndex}`);
+      if (element) {
+        element.focus();
+      }
+    }
+  }, [focusedIndex]);
+
   return (
     <div className="container">
       <div className="row justify-content-center">
@@ -70,6 +114,9 @@ const LocalFetchDemo = () => {
                   GitHub repository
                 </a>.
                 The repository contains a dockerized Express.js API that generates 17 random numbers each time you call it.
+              </p>
+              <p className="card-text">
+                Use arrow keys to navigate between numbers. Press Tab to move focus to interactive elements.
               </p>
             </div>
           </div>
@@ -112,10 +159,17 @@ const LocalFetchDemo = () => {
                 </div>
               )}
               
-              <div className="row g-4">
+              <div className="row g-4" role="list">
                 {numbers.map((number, index) => (
-                  <div key={index} className="col-md-3 col-lg-2">
-                    <div className="card text-center">
+                  <div key={index} className="col-md-3 col-lg-2" role="listitem">
+                    <div
+                      id={`number-${index}`}
+                      className={`card text-center ${focusedIndex === index ? 'border-primary' : ''}`}
+                      tabIndex={0}
+                      onKeyDown={(e) => handleKeyDown(e, index)}
+                      onFocus={() => setFocusedIndex(index)}
+                      style={{ outline: focusedIndex === index ? '2px solid var(--bs-primary)' : 'none' }}
+                    >
                       <div className="card-body">
                         <h3 className="display-4">{number}</h3>
                       </div>
